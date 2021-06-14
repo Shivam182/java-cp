@@ -1,0 +1,21 @@
+StringTokenizer : NoSuchElementException = this is thrown when .nextToken() method found no element 
+- if only initialized one object and used once nextToken() then again if u eant to use next token u won't get , 
+IT MIGHT BE AS STRING TOKENIZER CREATES AN ARRAY OF STRING PARTS , AND BY USING st.nextToken method we might be 
+calling an iterator to tht array object ans nextToken just iterates and gives us iterated value . 
+
+##  WHEN WE FEEL THAT VARIABLES MUST USE DYNAMIC TYPING : MEANS DECLARE VARIABLE FIRST THEN INITIALIZE THEM 
+ANS : U R RUNNIG A LOOP{nested} AND U WILL KNOW IN FUTURE AFTER CHECKING SOME {iterable inside nested loop} CONDITION THAT HOW MANY TIMES YOUR outer LOOP WILL RUN 
+** sometimes u might need to get value from a loop and then give an array any length , we can say we can then initialize the array after the loop but what if just after getting the length we have to use array in loop , and even if we initialize the loop inside the array then it will be done again and again , okay so we can do break statement after initialization and do the initialization inside a nested loop !! yes may be , but it simply looks complex 
+CAN THIS NOT BE DONE IN STATIC TYPED ? 
+ANS : u just need to provide an extra space for initial initializing of the variable then after checking the condition in 
+nested loop , set the value to new value . and now the outer loop will be initialized to a new value.
+!!!! wait but in js can u really run the loop before specifyibg its mid variable ?????????????/ check it 
+
+* Never do initiation of any varibale inside any loop 
+* what does it mean the declaration in never used ? it keeps showing even if u write it again or change its value?
+Ans : because it wants that this variable should contribute to change value of some other variable , this means it has contributed in code . 
+
+CP rules :
+1. ur program must not end till last test case is fulfilled.
+2. all the sample inputs must be satisfied first , use them directly in ur program to check if they work 
+3. more the complex & nested code , lesser brain applied. keep it simple . not more than 2 levels of nesting .
