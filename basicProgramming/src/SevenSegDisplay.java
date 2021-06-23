@@ -15,7 +15,7 @@ import java.io.*;
  * 111. if total is odd , then divide by 2 . and get ans , then write ans-2 no.s
  * of 1, when u r left with 4 segments , max is number 4.
  * 
- * - check for long numbers - reverse the odd string case
+ * - check for long numbers - reverse the odd string cases
  */
 
 public class SevenSegDisplay {
