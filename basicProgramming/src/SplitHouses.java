@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
  * print the ans
  * 
  * Update: handle no such element exception, 
- *  we can limit to read only 20 chars for input2 ?
+ *  we can limit to read only 20 chars for input2 
  */
 public class SplitHouses {
 
