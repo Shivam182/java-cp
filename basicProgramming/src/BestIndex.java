@@ -4,8 +4,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+
 import java.util.StringTokenizer;
 
 /**
@@ -17,6 +16,8 @@ import java.util.StringTokenizer;
  * after the mid element -->> then use symmetric index in other side if indexMax
  * lies before the mid element -->> 0 will be the best index. what if ques
  * contains neg numbers.
+ * 
+ * 
  * 
  */
 
