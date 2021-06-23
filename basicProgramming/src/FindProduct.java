@@ -27,8 +27,8 @@ public class FindProduct {
         // this is better than above
         arr = br.readLine().split(" ");
 
-        // take long instead of int because if multiplying huge numbers it can go out of
-        // range
+        // take long instead of int : if multiplying huge numbers it can go out of
+        // range 
         Long product = 1L;
 
         for (int i = 0; i < arraySize; i += 2) {
