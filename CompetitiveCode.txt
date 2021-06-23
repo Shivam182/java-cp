@@ -1,0 +1,42 @@
+## Best Do's :-
+1. Understand The Problems First.
+2. Solve Its 3 Test Cases on Copy.
+3. Convert Logic To Code.
+4. If Problem Not Solved Well [Tle,tes case failed any] start to think again using other approach
+
+## Terms :-
+0. Time Complexity : time taken by an algorithm to run as a function of length of input . this is constant(for one type of algo)
+   and different for every algorithm.
+1. Time Limit : Time taken by an alogorithm to end execution from start. it must not exceed than a given time.
+2. Constraints : BorderLine to have Inputs.
+3. Test Cases : For how many times your code will re-iterate itself from start to end 
+4. Caching : Store the results in a Temp / Auxilliary varible or Array instead of doing calculation again 
+   caching increses memory usage but decreases time usage. 
+
+** TIME COMPLEXITY IS NOT THE VILLIAN BUT TIME LIMIT IS !! 
+
+*** your code / fxn must run inside time limit , so depending on that choose the best
+    time-complexity algo / method. 
+
+   ## How To Choose The Best algorithm ??
+
+   Ans : let say an example for an input lying between N = 10 to 11
+   then worst accepted algorithm can have time complexity = O(N^6)
+   this means that for solving this ques , u can have 6 nesting levels in a loop
+   example 2: if N <= 400 then worst accepted will be O(N^3) ... this must be faster than first one 
+   because in case-1 we had small N so it can solve 6 levels of nesting in same time but here it can only solve 
+   3 levels of nesting
+
+   HENCE based on input length choose timed algorithm.
+
+
+
+## Rules To Follow :-
+1. Do Not Nest more than 2 levels any one for loop
+2. Use Fast I/O 
+3. if still TLE persists use caching 
+4. close the keyboard after use 
+5. after getting req Ans break from loops / switch statements.
+6. Write Verbal Logic over top of a program.
+7. write small comments before anything.
+8. try using more and more reusable kind functions.
