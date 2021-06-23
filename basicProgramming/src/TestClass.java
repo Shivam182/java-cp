@@ -6,7 +6,7 @@ import java.util.Vector;
 
 public class TestClass {
     public static void main(String[] args) {
-        // int n1 = 0;
+        // int n1 = 1;
         // int a = 2 + n1;
         // int d = 1;
         // int d1 = 3;
@@ -37,7 +37,7 @@ public class TestClass {
         //     System.out.println(list.indexOf(m));
         // }
 
-        
+
 
 
     }
