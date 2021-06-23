@@ -1,9 +1,9 @@
 import java.io.BufferedReader;
 import java.util.ArrayList;
-import java.util.Arrays;
+// import java.util.Arrays;
 // import java.util.HashMap;
 // import java.util.Map;
-import java.util.StringTokenizer;
+// import java.util.StringTokenizer;
 
 import java.io.*;
 
@@ -15,8 +15,7 @@ import java.io.*;
  * 111. if total is odd , then divide by 2 . and get ans , then write ans-2 no.s
  * of 1, when u r left with 4 segments , max is number 4.
  * 
- * - check for long numbers
- * - reverse the odd string case
+ * - check for long numbers - reverse the odd string case
  */
 
 public class SevenSegDisplay {
@@ -56,8 +55,6 @@ public class SevenSegDisplay {
         return (ans);
     }
 
-  
-
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -77,7 +74,7 @@ public class SevenSegDisplay {
             Long totalSegments = 0L;
             for (String string : inpuString) {
 
-                // when we ad int + long ans comes in long 
+                // when we ad int + long ans comes in long
                 totalSegments = totalSegments + numOfSegments(Integer.parseInt(string));
             }
 
