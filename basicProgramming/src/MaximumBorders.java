@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * FAILED AND COMPLEX PROGRAM 
+ * FAILED AND COMPLEX CODE
  */
 
 public class MaximumBorders {
