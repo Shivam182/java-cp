@@ -10,6 +10,10 @@ import java.util.StringTokenizer;
  * Get the array1 - Get the array2 - Get smallest num in array1 - Do for each
  * (i) ai = ai - bi (if ai >= bi) till u do not get an ai < num or ai = num -
  * count++ for every successful ai = bi after operation.
+ * 
+ * 
+ * Required Updates :
+ * replace the do-while loop with a while loop. it consumes extra time , for first unchecked iteration 
  */
 
 public class NoOfSteps {
@@ -121,5 +125,9 @@ public class NoOfSteps {
  * 
  * 3. Java String Maximum Length ??? Ans: As we use ints for indexing in String
  * , hence Integer.MAX_INT is range of Strings in java
+ * 
+ * 4. Do not take multiple levels of I/O like taking a string input --> separating ---> storing in an arraylist 
+ * 5. do not use do-while loop because it consumes extra time for first unchecked iteration that is inevitable 
+ * 6. Use Do-While loops only when , u have to do the 1st iteration for must.
  * 
  */
