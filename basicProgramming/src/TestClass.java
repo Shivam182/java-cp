@@ -29,16 +29,14 @@ public class TestClass {
         // list.add(2l);
         // list.add(3l);
         // list.add(1l);
-        // // do not initialize iterator before adding elements to list : ConcurrentModificationException
+        // // do not initialize iterator before adding elements to list :
+        // ConcurrentModificationException
         // Iterator<Long> iterator = list.iterator();
 
         // while (iterator.hasNext()) {
-        //     long m = iterator.next();
-        //     System.out.println(list.indexOf(m));
+        // long m = iterator.next();
+        // System.out.println(list.indexOf(m));
         // }
-
-
-
 
     }
 }
