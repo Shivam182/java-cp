@@ -6,14 +6,18 @@ import java.util.Collections;
 import java.util.StringTokenizer;
 
 /**
- * LOGIC :--------------------------------------------------- - Get array size -
+ * LOGIC :--------------------------------------------------- 
+ * Method (1) : Failed 
+ * - Get array size -
  * Get the array1 - Get the array2 - Get smallest num in array1 - Do for each
  * (i) ai = ai - bi (if ai >= bi) till u do not get an ai < num or ai = num -
  * count++ for every successful ai = bi after operation.
  * 
+ * Method (2) : Successful
  * 
- * Required Updates :
- * replace the do-while loop with a while loop. it consumes extra time , for first unchecked iteration 
+ * 
+ * Required Updates : replace the do-while loop with a while loop. it consumes
+ * extra time , for first unchecked iteration
  */
 
 public class NoOfSteps {
@@ -25,7 +29,7 @@ public class NoOfSteps {
         int arraySize = Integer.parseInt(st.nextToken());
         String[] inputArr1 = bReader.readLine().trim().split(" ");
         String[] inputArr2 = bReader.readLine().trim().split(" ");
-     
+
         // casting out of range
         // int[] inputArr1 = new int[(int)arraySize];
 
@@ -47,14 +51,14 @@ public class NoOfSteps {
         // the minimum element might not be the min element of array 1 .
         // int num = Collections.min(array1);
 
-        ArrayList<Integer> minList  =new ArrayList<>();
+        ArrayList<Integer> minList = new ArrayList<>();
         for (int i = 0; i < arraySize; i++) {
             minList.add(array1.get(i) - array2.get(i));
         }
 
         int num = Collections.min(minList);
         int num2 = Collections.min(array1);
-        int [] minsArr = {num2 ,num};
+        int[] minsArr = { num2, num };
         // System.out.println(num + " num");
         int NoOfSteps = 0;
         int perIndexSteps = 0;
@@ -92,8 +96,6 @@ public class NoOfSteps {
 
         }
 
-        
-
         // System.out.println(NoOfSteps + " ans");
         System.out.println((NoOfSteps < 1) ? -1 : NoOfSteps);
     }
@@ -126,8 +128,15 @@ public class NoOfSteps {
  * 3. Java String Maximum Length ??? Ans: As we use ints for indexing in String
  * , hence Integer.MAX_INT is range of Strings in java
  * 
- * 4. Do not take multiple levels of I/O like taking a string input --> separating ---> storing in an arraylist 
- * 5. do not use do-while loop because it consumes extra time for first unchecked iteration that is inevitable 
- * 6. Use Do-While loops only when , u have to do the 1st iteration for must.
+ * 4. Do not take multiple levels of I/O like taking a string input -->
+ * separating ---> storing in an arraylist 5. do not use do-while loop because
+ * it consumes extra time for first unchecked iteration that is inevitable 6.
+ * Use Do-While loops only when , u have to do the 1st iteration for must.
+ * 
+ * 7. IMP : IF UR QUES REQUIRES USE OF ARRAY , THEN STAY AWAY FROM USING LONG
+ * ANYWHERE FOR ARRAY ARCHITECTURE long is not supported for array indexing in
+ * java But the elements of an array can be long values !!!
+ * 
+ * 
  * 
  */
