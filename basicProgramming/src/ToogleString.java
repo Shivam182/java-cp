@@ -15,31 +15,27 @@ import java.util.StringTokenizer;
 public class ToogleString {
     public static void main(String[] args) throws IOException {
 
-        // WAIT !! Have u read again competitve text.
-        // do all test cases correct in first attempt !!!
-
+        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         char[] arr = st.nextToken().toCharArray();
 
-        // char[] arr = in.toCharArray();
-        // ArrayList<Character> auxArrayList = new ArrayList<>();
+       
         char[] auxArray = new char[arr.length];
         int i = 0;
         for (char c : arr) {
 
             if (Character.isLowerCase(c)) {
                 auxArray[i] = Character.toUpperCase(c);
-                // auxArrayList.add();
+              
             } else {
-                // auxArrayList.add();
+                
                 auxArray[i] = Character.toLowerCase(c);
             }
             i++;
         }
 
-        // can this be used to convert an array directly to other class array
-        // Character[] arr1 = (Character[]) auxArrayList.toArray();
+        
         String ans = new String(auxArray);
         System.out.println(ans);
     }
